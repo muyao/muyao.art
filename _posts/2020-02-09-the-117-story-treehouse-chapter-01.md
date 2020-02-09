@@ -2,7 +2,7 @@
 author: muyao
 layout: post-full
 type: gallery
-featimg: 2020/the-117-story-treehouse-chapter-01/01.jpeg
+featimg: 2020/the-117-story-treehouse-chapter-01/cover-1.jpeg
 title: The 117 Story Treehouse (Chapter 1)
 tags: [book]
 gallery:

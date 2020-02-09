@@ -2,7 +2,7 @@
 author: muyao
 layout: post-full
 type: gallery
-featimg: 2020/the-117-story-treehouse-chapter-02/21.jpeg
+featimg: 2020/the-117-story-treehouse-chapter-02/cover-2.jpeg
 title: The 117-Story Treehouse (Chapter 2 - Aliens!)
 tags: [book]
 gallery:
