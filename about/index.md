@@ -5,4 +5,4 @@ title: About
 
 Hello and welcome! My name is Muyao :).
 
-hallo und herzlich willkommen! Ich bin Muyao :).
+Hallo und willkommen! Ich bin Muyao :).
