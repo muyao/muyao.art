@@ -1,0 +1,11 @@
+<div class="row">
+    <center>
+    <a href="{{ site.baseurl | replace: '//', '/' }}/">
+        <div class="gridster">
+          <img style="margin-right: 100px" src="/media/site/muyao-art-logo.jpg" height="130" width="130" />
+          <span>{% if site.name %}{{ site.name | xml_escape }}{% endif %}</span>
+        </div>
+        <div class="slogan">{% if site.description %}{{ site.description | xml_escape }}{% endif %}</div>
+    </a>
+    </center>
+</div>
