@@ -3,7 +3,7 @@ author: muyao
 layout: post-full
 type: gallery
 featimg: 2020/the-117-story-treehouse-chapter-02/21.jpeg
-title: The 117-Story Treehouse (Chapter 2 - Space Trip)
+title: The 117-Story Treehouse (Chapter 2 - Aliens!)
 tags: [book]
 gallery:
     - images:
@@ -25,6 +25,10 @@ gallery:
         alttext: Page 28
       - filename: 2020/the-117-story-treehouse-chapter-02/29.jpeg
         alttext: Page 29
+      - filename: 2020/the-117-story-treehouse-chapter-02/30.jpeg
+        alttext: Page 30
+      - filename: 2020/the-117-story-treehouse-chapter-02/31.jpeg
+        alttext: Page 31
 ---
 
 My latest book "The 117-Story Treehouse" is about two 9-year old children called
