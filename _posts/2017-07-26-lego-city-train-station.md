@@ -1,6 +1,6 @@
 ---
 author: muyao
-layout: post-full
+layout: post
 title: Lego City Train Station
 featimg: 2017/lego-city-train-station.jpg
 tags: [lego]

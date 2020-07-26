@@ -1,6 +1,6 @@
 ---
 author: muyao
-layout: post-full
+layout: post
 title: Rocket Flying
 featimg: 2020/rocket-flying.jpg
 tags: [lego]

@@ -1,6 +1,6 @@
 ---
 author: muyao
-layout: post-full
+layout: post
 title: Secret Box
 featimg: 2020/secret-box.jpg
 tags: [lego]

@@ -1,58 +1,65 @@
 ---
-layout: index-full
-description: the good site of life
+layout: base
+title: Muyao Art
 ---
-{% for post in paginator.posts %}
-    {% include article_index.html %}
-{% endfor %}
+
+<section class="listing">
+  <div class="content-wrap listing-wrap" style="position: relative; height: 1757.25px;">
+
+    {% for post in paginator.posts %}
+    <article class="listing-item" style="position: absolute; left: 0px; top: 0px;">
+
+      <a class="listing-item__link" href="{{ post.url | prepend: site.baseurl | replace: '//', '/'}}">
+
+        <div class="listing-item__image">
+          <img src="{{ site.media_folder }}/{{ post.featimg }}" alt="{{ post.featimg}}" />
+        </div>
+
+        <div class="listing-item__content listing-item__content--bottom">
+          <div class="listing-item__info">
+            <h2 class="listing-item__title">{{ post.title }}</h2>
+            <p class="listing-item__subtitle">{{ post.date | date: '%B %d, %Y' }}</p>
+          </div>
+        </div>
+
+      </a>
+
+    </article>
+    {% endfor %}
+
+  </div>
+</section>
+
+
+
+<section class="pagination">
 
 {% if paginator.total_pages > 1 %}
-    <div class="pagination">
-        <!-- link to first page -->
-        {% if paginator.total_pages > 3 %}
-            {% if paginator.page == 1 %}
-                <span class="btn disabled"><i class="fa fa-angle-double-left"></i></span>
-            {% else %}
-                <a class="btn" href="{{ '/' | prepend: site.baseurl | replace: '//', '/' }}"><i class="fa fa-angle-double-left"></i></a>
-            {% endif %}
-        {% endif %}
 
-        <!-- previous link -->
-        {% if paginator.previous_page %}
-            <a class="btn prev" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}"><i class="fa fa-angle-left"></i></a>
-        {% else %}
-            <span class="btn disabled"><i class="fa fa-angle-left"></i></span>
-        {% endif %}
+  <!-- previous link -->
+  {% if paginator.previous_page %}
+  <a href="{{ paginator.previous_page_path }}" class="button button--large pagination__prev pagination--on">
+  {% else %}
+  <a href="" class="button button--large pagination__prev cc-active">
+  {% endif %}
+    <svg class="svg-inline--fa fa-angle-left fa-w-8" aria-hidden="true" data-prefix="fa" data-icon="angle-left" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" data-fa-i2svg="">
+      <path fill="currentColor" d="M31.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L127.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L201.7 409c-9.4 9.4-24.6 9.4-33.9 0l-136-136c-9.5-9.4-9.5-24.6-.1-34z"></path>
+    </svg>
+    <span>Newer Posts</span>
+  </a>
 
-        <!-- number links -->
-        {% capture start %}
-            {{ paginator.page | minus: 3 }}
-        {% endcapture %}
+  <!-- next link -->
+  {% if paginator.next_page %}
+  <a href="{{ paginator.next_page_path }}" class="button button--large pagination__next pagination--on">
+  {% else %}
+  <a href="" class="button button--large pagination__next cc-active">
+  {% endif %}
+    <span>Older Posts</span>
+    <svg class="svg-inline--fa fa-angle-right fa-w-8" aria-hidden="true" data-prefix="fa" data-icon="angle-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" data-fa-i2svg="">
+      <path fill="currentColor" d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"></path>
+    </svg>
+  </a>
 
-        {% for i in (1..paginator.total_pages) limit: 5 offset: start %}
-            {% if i == paginator.page %}
-                <span class="btn disabled">{{ i }}</span>
-            {% elsif i == 1 %}
-                <a class="btn" href="{{ site.baseurl }}/">{{ i }}</a>
-            {% else %}
-                <a class="btn" href="/page/{{ i }}">{{ i }}</a>
-            {% endif %}
-        {% endfor %}
-
-        <!-- next link -->
-        {% if paginator.next_page %}
-            <a class="btn next" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}"><i class="fa fa-angle-right"></i></a>
-        {% else %}
-            <span class="btn disabled"><i class="fa fa-angle-right"></i></span>
-        {% endif %}
-
-        <!-- last page link -->
-        {% if paginator.total_pages > 3 %}
-            {% if paginator.page == paginator.total_pages %}
-                <span class="btn disabled"><i class="fa fa-angle-double-right"></i></span>
-            {% else %}
-                <a class="btn" href="{{ site.baseurl | replace: '//', '/' }}/page/{{paginator.total_pages}}"><i class="fa fa-angle-double-right"></i></a>
-            {% endif %}
-        {% endif %}
-    </div>
 {% endif %}
+
+</section>

@@ -1,8 +1,15 @@
-<footer>
-    <div class="content">
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__content">
+      <div class="footer__copyright">
         <span>&copy; muyao.art</span>
-        <span class="backtotop">back to top</span>
+
+        <!-- will be hidden with css color -->
+        <span id="edit-this-page">
+          <a rel="nofollow" href="{{ site.github_branch_edit_url }}/{{ page.path }}">Edit this page</a>
+        </span>
+
+      </div>
     </div>
+  </div>
 </footer>
-<script src="{{ site.baseurl | replace: '//', '/' }}/js/build/global.min.js"></script>
-<!-- analytics -->

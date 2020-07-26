@@ -1,6 +1,6 @@
 ---
 author: muyao
-layout: post-full
+layout: post
 title: MKVII SPACE SHUTTLE
 featimg: 2020/mkvii-space-shuttle.jpg
 tags: [lego]

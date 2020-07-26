@@ -1,6 +1,6 @@
 ---
 author: muyao
-layout: post-full
+layout: post
 title: Rocket Separated
 featimg: 2020/rocket-separated.jpg
 tags: [lego]

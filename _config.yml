@@ -4,11 +4,12 @@ description: # Hallo und herzlich willkommen
 url: #place url
 baseurl: #place folder name if site is served in subfolder
 author_title_prefix: 'By Muyao'
+github_branch_edit_url: https://github.com/muyao/muyao.art/edit/master
 
 # Site options
 permalink: /:title/
 relative_permalinks: false
-paginate: 8
+paginate: 9
 paginate_path: /page/:num/
 infinite_scroll: true #change to false if you want to use pagination
 
@@ -32,7 +33,7 @@ defaults:
       path: ""
       type: "posts"
     values:
-      layout: "post-full"
+      layout: "post"
       type: "standard"
       homedisplay: "featimg"
 

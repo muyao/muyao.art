@@ -1,6 +1,6 @@
 ---
 author: muyao
-layout: post-full
+layout: post
 title: MSC Fantasia
 featimg: 2018/msc-fantasia.jpg
 tags: [ship]

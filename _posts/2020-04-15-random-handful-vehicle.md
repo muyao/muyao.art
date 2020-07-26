@@ -1,6 +1,6 @@
 ---
 author: muyao
-layout: post-full
+layout: post
 title: Random Handful Vehicle
 featimg: 2020/random-handful-vehicle.jpg
 tags: [lego]

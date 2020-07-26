@@ -1,6 +1,6 @@
 ---
 author: muyao
-layout: post-full
+layout: post
 title: Two Camels
 featimg: 2016/two-camels.jpg
 tags: [animal]

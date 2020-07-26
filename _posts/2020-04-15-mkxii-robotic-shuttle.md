@@ -1,6 +1,6 @@
 ---
 author: muyao
-layout: post-full
+layout: post
 title: MKXII ROBOTIC SHUTTLE
 featimg: 2020/mkxii-robotic-shuttle.jpg
 tags: [lego]
