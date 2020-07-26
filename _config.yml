@@ -1,23 +1,31 @@
-full_rebuild: true
+# Site information
 name: Muyao Art
 description: # Hallo und herzlich willkommen
-destination: jekyllbuild
 url: #place url
 baseurl: #place folder name if site is served in subfolder
+author_title_prefix: 'By Muyao'
+
+# Site options
 permalink: /:title/
+relative_permalinks: false
 paginate: 8
 paginate_path: /page/:num/
 infinite_scroll: true #change to false if you want to use pagination
-plugins:
-  - jekyll-paginate
+
+# Content settings
+author_default_avatar: /profile-pic.jpg
 tag_dir: /tag
 category_dir: /category
 author_dir: /author
-author_title_prefix: 'By Muyao'
 media_folder: /media
-author_default_avatar: /profile-pic.jpg
 
+# Build settings
+full_rebuild: true
 encoding: utf-8
+destination: jekyllbuild
+plugins:
+  - jekyll-paginate
+
 defaults:
   -
     scope:
@@ -27,9 +35,19 @@ defaults:
       layout: "post-full"
       type: "standard"
       homedisplay: "featimg"
+
 markdown: kramdown
 kramdown:
   input: GFM
   syntax_highlighter: rouge
-relative_permalinks: false
-exclude: [.git, .gitignore, sass, .sass-cache, package.json, gruntfile.js, node_modules, README.md, jekyllbuild]
+
+exclude:
+  - .git
+  - .gitignore
+  - .sass-cache
+  - README.md
+  - gruntfile.js
+  - jekyllbuild
+  - node_modules
+  - package.json
+  - sass
