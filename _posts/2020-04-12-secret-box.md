@@ -1,5 +1,4 @@
 ---
-author: muyao
 layout: post
 title: Secret Box
 featimg: 2020/secret-box.jpg

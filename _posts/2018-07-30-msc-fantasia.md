@@ -1,5 +1,4 @@
 ---
-author: muyao
 layout: post
 title: MSC Fantasia
 featimg: 2018/msc-fantasia.jpg

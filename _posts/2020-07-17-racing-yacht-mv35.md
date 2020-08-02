@@ -1,5 +1,4 @@
 ---
-author: muyao
 layout: post
 title: Racing Yacht "MV35"
 featimg: 2020/racing-yacht-mv35.jpg

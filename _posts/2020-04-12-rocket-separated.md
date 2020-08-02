@@ -1,5 +1,4 @@
 ---
-author: muyao
 layout: post
 title: Rocket Separated
 featimg: 2020/rocket-separated.jpg

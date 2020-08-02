@@ -1,5 +1,4 @@
 ---
-author: muyao
 layout: post
 title: Rocket Flying
 featimg: 2020/rocket-flying.jpg

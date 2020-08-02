@@ -3,7 +3,6 @@ name: Muyao Art
 description: # Hallo und herzlich willkommen
 url: #place url
 baseurl: #place folder name if site is served in subfolder
-author_title_prefix: 'By Muyao'
 github_branch_edit_url: https://github.com/muyao/muyao.art/edit/master
 
 # Site options
@@ -14,10 +13,8 @@ paginate_path: /page/:num/
 infinite_scroll: true #change to false if you want to use pagination
 
 # Content settings
-author_default_avatar: /profile-pic.jpg
 tag_dir: /tag
 category_dir: /category
-author_dir: /author
 media_folder: /media
 
 # Build settings

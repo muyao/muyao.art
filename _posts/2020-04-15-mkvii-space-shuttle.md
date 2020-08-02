@@ -1,5 +1,4 @@
 ---
-author: muyao
 layout: post
 title: MKVII SPACE SHUTTLE
 featimg: 2020/mkvii-space-shuttle.jpg

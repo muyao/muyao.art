@@ -1,5 +1,4 @@
 ---
-author: muyao
 layout: post
 title: Rubbish Truck
 featimg: 2020/rubbish-truck-1.jpg

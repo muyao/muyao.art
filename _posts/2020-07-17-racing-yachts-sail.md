@@ -1,5 +1,4 @@
 ---
-author: muyao
 layout: post
 title: Racing Yacht's sail
 featimg: 2020/racing-yachts-sail.jpg

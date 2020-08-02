@@ -1,5 +1,4 @@
 ---
-author: muyao
 layout: post
 title: Two Camels
 featimg: 2016/two-camels.jpg
