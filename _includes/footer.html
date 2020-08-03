@@ -4,10 +4,12 @@
       <div class="footer__copyright">
         <span>&copy; muyao.art</span>
 
+        {% if page.path contains "_posts/" %}
         <!-- will be hidden with css color -->
         <span id="edit-this-page">
           <a rel="nofollow" href="{{ site.github_branch_edit_url }}/{{ page.path }}">Edit this page</a>
         </span>
+        {% endif %}
 
       </div>
     </div>
