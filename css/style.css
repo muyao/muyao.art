@@ -1045,31 +1045,31 @@ section {
   position: relative;
   margin: 0 auto;
   padding: 0 20px;
-  max-width: 500px
+  max-width: 95%
 }
 
 @media only screen and (min-width:768px) {
   .wrap {
     padding: 0;
-    max-width: 60%
+    max-width: 80%
   }
 }
 
 @media only screen and (min-width:1024px) {
   .wrap {
-    max-width: 55%
+    max-width: 75%
   }
 }
 
 @media only screen and (min-width:1220px) {
   .wrap {
-    max-width: 50%
+    max-width: 70%
   }
 }
 
 @media only screen and (min-width:1540px) {
   .wrap {
-    max-width: 45%
+    max-width: 65%
   }
 }
 
@@ -1573,7 +1573,7 @@ section {
   margin-right: auto;
   padding-left: 30px;
   padding-right: 30px;
-  max-width: 500px
+  max-width: 95%
 }
 
 @media only screen and (min-width:768px) {
@@ -1588,7 +1588,7 @@ section {
   .single ul {
     padding-left: 0;
     padding-right: 0;
-    max-width: 60%
+    max-width: 80%
   }
 }
 
@@ -1602,7 +1602,7 @@ section {
   .single ol,
   .single p,
   .single ul {
-    max-width: 55%
+    max-width: 75%
   }
 }
 
@@ -1616,7 +1616,7 @@ section {
   .single ol,
   .single p,
   .single ul {
-    max-width: 50%
+    max-width: 70%
   }
 }
 
@@ -1630,7 +1630,7 @@ section {
   .single ol,
   .single p,
   .single ul {
-    max-width: 45%
+    max-width: 65%
   }
 }
 
@@ -1943,13 +1943,13 @@ section {
 .video-wrap {
   position: relative;
   max-width: 90%;
-  margin: 20px auto
+  margin: 10px auto
 }
 
 @media only screen and (min-width:768px) {
   .image-wrap,
   .video-wrap {
-    margin: 30px auto;
+    margin: 15px auto;
     max-width: 83%
   }
 }
@@ -1957,7 +1957,7 @@ section {
 @media only screen and (min-width:1220px) {
   .image-wrap,
   .video-wrap {
-    margin: 40px auto;
+    margin: 20px auto;
     max-width: 75%
   }
 }
