@@ -13,27 +13,40 @@ def main():
     _write_post(arg)
 
 
+def _log(s):
+    print(f'[+] {s}')
+
+
 def _prepare_images(arg):
     year = arg.date[:4]
-    os.makedirs(f'media/{year}', exist_ok=True)
+    if arg.dryrun:
+        _log(f'Would create dir media/{year}')
+    else:
+        os.makedirs(f'media/{year}', exist_ok=True)
 
     urls = arg.image or []
     images = _image_pathnames(arg)
 
     for i in range(len(urls)):
-        print(f'Downloading {urls[i]} -> media/{images[i]}')
-        urllib.request.urlretrieve(urls[i], f'media/{images[i]}')
+        if arg.dryrun:
+            _log(f'Would saving media/{images[i]}')
+        else:
+            _log(f'Saving media/{images[i]}')
+            urllib.request.urlretrieve(urls[i], f'media/{images[i]}')
 
 
 def _write_post(arg):
     post = _post(arg)
     title = _post_slug(arg)
     post_file = f'_posts/{arg.date}-{title}.md'
-    print(f'Writing {post_file} with content:\n')
-    print(post)
+    _log(f'Generated post content:\n{post}')
 
-    with open(post_file, 'w') as f:
-        f.write(post)
+    if arg.dryrun:
+        _log(f'Would write post {post_file}')
+    else:
+        with open(post_file, 'w') as f:
+            f.write(post)
+        _log(f'Wrote post {post_file}')
 
 
 def _post_slug(arg):
@@ -97,6 +110,9 @@ def _parse_args():
     parser.add_argument('-t', '--tag',
                         action='append',
                         help='Tag(s) to apply to the post')
+    parser.add_argument('-n', '--dryrun',
+                        action='store_true',
+                        help='Dry run without creating anything')
     return parser.parse_args()
 
 
