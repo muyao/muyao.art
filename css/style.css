@@ -2788,3 +2788,23 @@ section {
   min-height: 200px;
   resize: none
 }
+
+/* tag box */
+.tag-box {
+  list-style: none;
+  margin: 0;
+  overflow: hidden;
+}
+
+.tag-box.inline li {
+  line-height: 2em;
+  float: left;
+}
+
+.tag-box a {
+  padding: 3px 6px;
+  margin: 2px;
+  border-radius: 3px;
+  text-decoration: none;
+  border: 1px dashed;
+}
