@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Mountain Range Sketch
+title: Mountain Reflection
 featimg: 2022/mountain-sketch.jpg
 tags: ['painting']
 ---
